@@ -1,0 +1,53 @@
+/* Parent container to hold the articles */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: center;
+    gap: 20px; /* Space between articles */
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Individual article styling */
+article {
+    flex: 1 1 300px; /* Flexible width with a minimum of 300px */
+    max-width: 350px; /* Maximum width for the article */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the article */
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Text styling */
+article h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+article h3:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF; /* Highlighted color for the name */
+}
